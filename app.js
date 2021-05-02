@@ -1,6 +1,10 @@
 //jshint esversion:6
 //enable-npm
 
+var favicon = require('serve-favicon');
+
+app.use(favicon(__dirname + '/public/favicon.ico'));
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require('mongoose')
